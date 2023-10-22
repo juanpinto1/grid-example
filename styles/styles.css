@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.template-container {
+  color: rgb(2, 2, 2);
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 5% 93% 2%;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+.template-container .nav1 {
+  background-color: rgba(21, 66, 126, 0.925);
+  grid-area: header;
+  text-align: center;
+  padding-top: 25px;
+  font-size: xx-large;
+  color: white;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.template-container .categorias1 {
+  background-color: rgb(184, 179, 179);
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+  padding: 8% 0 0 8%;
+}
+.template-container .menu1 {
+  background-color: rgb(184, 179, 179);
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1%;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+.template-container .menu1 p {
+  margin-top: 10px;
+  border: solid 1px rgb(255, 255, 255);
+  font-size: 20px;
+}
+.template-container .menu11 {
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 2%;
+}
+.template-container .menu11 img {
+  width: 350px;
+  height: 400px;
+}
+
+.footer1 {
+  background-color: rgb(255, 255, 255);
+  grid-area: footer;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  font-size: large;
+}
+
+.buttom {
+  background-color: rgba(21, 66, 126, 0.925);
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+}/*# sourceMappingURL=styles.css.map */

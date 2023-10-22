@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@mixin itemtemplate($b, $g){
+    background-color: $b;
+    grid-area: $g;
+}
+.template-container{
+    color:rgb(2, 2, 2);
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 5% 93% 2%;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+    .nav1{
+    @include itemtemplate(rgb(21, 66, 126, 0.925),header);
+    text-align: center;
+    padding-top: 25px;
+    font-size: xx-large;
+    color:white;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+    .categorias1{
+    @include itemtemplate(rgb(184, 179, 179),sidebar);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5%;
+    padding: 8% 0 0 8%;
+}
+    .menu1{
+    @include itemtemplate(rgb(184, 179, 179),main);
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;  
+    padding: 1%;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: max-content;
+    p{
+        margin-top: 10px;
+        border: solid 1px rgb(255, 255, 255);
+        font-size: 20px;
+    }
+}
+    .menu11{
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 2%;
+        img{
+            width: 350px;
+            height: 400px;
+        }
+    }
+    }
+
+.footer1{
+@include itemtemplate(rgb(255, 255, 255),footer);
+width: 100%;
+height: 100px;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 25px;
+font-size: large;
+}
+
+.buttom{
+    background-color: rgba(21, 66, 126, 0.925);
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    }
